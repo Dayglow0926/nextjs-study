@@ -23,6 +23,14 @@ const nextConfig = {
         source: "/api/movies/:id",
         destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`,
       },
+      {
+        source: "/api/books",
+        destination: `https://books-api.nomadcoders.workers.dev/lists`,
+      },
+      {
+        source: "/api/book/:id",
+        destination: `https://books-api.nomadcoders.workers.dev/list?name=:id`,
+      },
     ];
   },
 };
