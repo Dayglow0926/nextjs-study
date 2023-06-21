@@ -1,12 +1,10 @@
 import { useState } from "react";
-import NavBar from "./components/NavBar";
 
 export default function Home() {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <NavBar />
-      <h1>Home</h1>
+      <h1 className="active">Home</h1>
     </div>
   );
 }
